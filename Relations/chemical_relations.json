@@ -1,0 +1,33 @@
+{
+    "name": "Chemical Rules and Relations Pack",
+    "version": 1.0,
+    "relations": {
+        "reacts with": {
+            "inherits": [],
+            "implies": [],
+            "implies-inverse": [
+                "reacts with"
+            ],
+            "incompatible-with": [],
+            "rules": []
+        },	
+        "yields": {
+            "inherits": [],
+            "implies": [],
+            "implies-inverse": [
+                "is produced by"
+            ],
+            "incompatible-with": [],
+            "rules": []
+        },
+        "is produced by": {
+            "inherits": [],
+            "implies": [],
+            "implies-inverse": [
+                "yields"
+            ],
+            "incompatible-with": [],
+            "rules": []
+        }
+    }
+}

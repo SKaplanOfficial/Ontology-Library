@@ -1,0 +1,35 @@
+{
+	"name": "Linguistic Rules and Relations Pack",
+    "version": 1.0,
+	"relations": {
+		"is palindromic": {
+			"inherits": [],
+			"implies": [],
+			"implies-inverse": [],
+			"incompatible-with": [],
+			"rules": [
+				"lambda subject, predicate, object : [[subject, 'is a', 'palindrome']] if len(subject) > 2 and subject == subject[::-1] else None"
+			]
+		},
+		"is numerically palindromic": {
+			"inherits": [],
+			"implies": [],
+			"implies-inverse": [],
+			"incompatible-with": [],
+			"rules": [
+				"lambda subject, predicate, object : [[subject, 'is a', 'numeric palindrome'], ['numeric palindrome', 'is a', 'palindrome']] if len(subject) > 2 and subject.isdecimal() and subject == subject[::-1] else None"
+			]
+		},
+		"rhymes with": {
+			"inherits": [
+				"rhymes with"
+			],
+			"implies": [],
+			"implies-inverse": [
+				"rhymes with"
+			],
+			"incompatible-with": [],
+			"rules": []
+		}
+	}
+}

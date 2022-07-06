@@ -1,0 +1,33 @@
+{
+    "name": "Mathematics Rules and Relations Pack",
+    "version": 1.0,
+    "relations": {
+        "is prime": {
+            "inherits": [],
+            "implies": [],
+            "implies-inverse": [],
+            "incompatible-with": [],
+            "rules": [
+                "lambda subject, predicate, object : [[subject, 'is a', 'prime number'], ['prime number', 'is a', 'number']] if subject.isdecimal() and int(subject) > 1 and all(int(subject) % i for i in range(2, int(int(subject) ** 0.5) + 1)) else None"
+            ]
+        },
+        "is even": {
+            "inherits": [],
+            "implies": [],
+            "implies-inverse": [],
+            "incompatible-with": [],
+            "rules": [
+                "lambda subject, predicate, object : [[subject, 'is a', 'even number'], ['even number', 'is a', 'number']] if subject.isdecimal() and int(subject) % 2 == 0 else None"
+            ]
+        },
+        "is odd": {
+            "inherits": [],
+            "implies": [],
+            "implies-inverse": [],
+            "incompatible-with": [],
+            "rules": [
+                "lambda subject, predicate, object : [[subject, 'is a', 'odd number'], ['odd number', 'is a', 'number']] if subject.isdecimal() and int(subject) % 2 == 1 else None"
+            ]
+        }
+    }
+}

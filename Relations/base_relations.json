@@ -1,0 +1,478 @@
+{
+    "name": "Base Rules and Relations Pack",
+    "version": 1.0,
+    "relations": {
+        "is": {
+            "inherits": [],
+            "implies": [],
+            "implies-inverse": [
+                "describes"
+            ],
+            "incompatible-with": [],
+            "rules": []
+        },
+        "is a": {
+            "inherits": [
+                "is a"
+            ],
+            "implies": [],
+            "implies-inverse": [],
+            "incompatible-with": [],
+            "rules": []
+        },
+        "owns": {
+            "inherits": [],
+            "implies": [],
+            "implies-inverse": [
+                "belongs to"
+            ],
+            "incompatible-with": [],
+            "rules": []
+        },
+        "belongs to": {
+            "inherits": [],
+            "implies": [],
+            "implies-inverse": [
+                "owns"
+            ],
+            "incompatible-with": [],
+            "rules": []
+        },
+        "has": {
+            "inherits": [
+                "has"
+            ],
+            "implies": [],
+            "implies-inverse": [],
+            "incompatible-with": [],
+            "rules": []
+        },
+        "is part of": {
+            "inherits": [
+                "is part of"
+            ],
+            "implies": [
+                "is in"
+            ],
+            "implies-inverse": [
+                "has",
+                "includes"
+            ],
+            "incompatible-with": [],
+            "rules": []
+        },
+        "includes": {
+            "inherits": [
+                "includes"
+            ],
+            "implies": [],
+            "implies-inverse": [
+                "is part of"
+            ],
+            "incompatible-with": [],
+            "rules": []
+        },
+        "contains": {
+            "inherits": [
+                "contains"
+            ],
+            "implies": [
+                "has"
+            ],
+            "implies-inverse": [
+                "is contained in"
+            ],
+            "incompatible-with": [],
+            "rules": []
+        },
+        "is contained in": {
+            "inherits": [
+                "is contained in"
+            ],
+            "implies": [],
+            "implies-inverse": [
+                "contains",
+                "has"
+            ],
+            "incompatible-with": [],
+            "rules": []
+        },
+        "is in": {
+            "inherits": [
+                "is in"
+            ],
+            "implies": [],
+            "implies-inverse": [],
+            "incompatible-with": [],
+            "rules": []
+        },
+        "has path to": {
+            "inherits": [
+                "has path to"
+            ],
+            "implies": [],
+            "implies-inverse": [
+                "is reachable from"
+            ],
+            "incompatible-with": [],
+            "rules": []
+        },	
+        "links to": {
+            "inherits": [
+                "has path to"
+            ],
+            "implies": [
+                "has path to"
+            ],
+            "implies-inverse": [
+                "is linked to by"
+            ],
+            "incompatible-with": [],
+            "rules": []
+        },
+        "is attached to": {
+            "inherits": [
+                "is included in",
+                "is part of",
+                "is contained in"
+            ],
+            "implies": [],
+            "implies-inverse": [
+                "is attached to"
+            ],
+            "incompatible-with": [],
+            "rules": []
+        },
+        "is greater than": {
+            "inherits": [
+                "is greater than"
+            ],
+            "implies": [],
+            "implies-inverse": [
+                "is less than"
+            ],
+            "incompatible-with": [],
+            "rules": []
+        },
+        "is less than": {
+            "inherits": [
+                "is less than"
+            ],
+            "implies": [],
+            "implies-inverse": [
+                "is greater than"
+            ],
+            "incompatible-with": [],
+            "rules": []
+        },
+        "is equal to": {
+            "inherits": [
+                "is equal to"
+            ],
+            "implies": [
+                "equals",
+                "eq",
+                "="
+            ],
+            "implies-inverse": [
+                "is equal to"
+            ],
+            "incompatible-with": [],
+            "rules": []
+        },
+        "is better than": {
+            "inherits": [
+                "is better than"
+            ],
+            "implies": [],
+            "implies-inverse": [
+                "is worse than"
+            ],
+            "incompatible-with": [],
+            "rules": []
+        },
+        "is worse than": {
+            "inherits": [
+                "is worse than"
+            ],
+            "implies": [],
+            "implies-inverse": [
+                "is better than"
+            ],
+            "incompatible-with": [],
+            "rules": []
+        },
+        "is larger than": {
+            "inherits": [
+                "is larger than"
+            ],
+            "implies": [],
+            "implies-inverse": [
+                "is smaller than"
+            ],
+            "incompatible-with": [],
+            "rules": []
+        },
+        "is smaller than": {
+            "inherits": [
+                "is smaller than"
+            ],
+            "implies": [],
+            "implies-inverse": [
+                "is larger than"
+            ],
+            "incompatible-with": [],
+            "rules": []
+        },
+        "is same size as": {
+            "inherits": [
+                "is same size as"
+            ],
+            "implies": [],
+            "implies-inverse": [
+                "is same size as"
+            ],
+            "incompatible-with": [],
+            "rules": []
+        },
+        "is taller than": {
+            "inherits": [
+                "is taller than"
+            ],
+            "implies": [],
+            "implies-inverse": [
+                "is shorter than"
+            ],
+            "incompatible-with": [],
+            "rules": []
+        },
+        "is shorter than": {
+            "inherits": [
+                "is shorter than"
+            ],
+            "implies": [],
+            "implies-inverse": [
+                "is taller than"
+            ],
+            "incompatible-with": [],
+            "rules": []
+        },
+        "is same height as": {
+            "inherits": [
+                "is same height as"
+            ],
+            "implies": [],
+            "implies-inverse": [
+                "is same height as"
+            ],
+            "incompatible-with": [],
+            "rules": []
+        },
+        "allows": {
+            "inherits": [
+                "allows"
+            ],
+            "implies": [],
+            "implies-inverse": [
+                "is allowed by"
+            ],
+            "incompatible-with": [],
+            "rules": []
+        },
+        "prohibits": {
+            "inherits": [],
+            "implies": [],
+            "implies-inverse": [
+                "is prohibited by"
+            ],
+            "incompatible-with": [],
+            "rules": []
+        },
+        "requires": {
+            "inherits": [
+                "requires"
+            ],
+            "implies": [],
+            "implies-inverse": [
+                "is required by"
+            ],
+            "incompatible-with": [],
+            "rules": []
+        },
+        "suggests": {
+            "inherits": [
+                "suggests"
+            ],
+            "implies": [],
+            "implies-inverse": [
+                "is suggested by"
+            ],
+            "incompatible-with": [],
+            "rules": []
+        },
+        "leads to": {
+            "inherits": [
+                "leads to"
+            ],
+            "implies": [
+            ],
+            "implies-inverse": [
+                "results from"
+            ],
+            "incompatible-with": [],
+            "rules": []
+        },
+        "results from": {
+            "inherits": [
+                "results from"
+            ],
+            "implies": [
+            ],
+            "implies-inverse": [
+                "leads to"
+            ],
+            "incompatible-with": [],
+            "rules": []
+        },
+        "relies on": {
+            "inherits": [
+                "relies on"
+            ],
+            "implies": [
+                "may result from"
+            ],
+            "implies-inverse": [
+                "is required for"
+            ],
+            "incompatible-with": [],
+            "rules": []
+        },
+        "is required for": {
+            "inherits": [
+                "is required for"
+            ],
+            "implies": [
+                "may lead to"
+            ],
+            "implies-inverse": [
+                "relies on"
+            ],
+            "incompatible-with": [],
+            "rules": []
+        },
+        "may result from": {
+            "inherits": [
+                "may result from"
+            ],
+            "implies": [],
+            "implies-inverse": [
+                "may lead to"
+            ],
+            "incompatible-with": [],
+            "rules": []
+        },
+        "may lead to": {
+            "inherits": [
+                "may lead to"
+            ],
+            "implies": [],
+            "implies-inverse": [
+                "may result from"
+            ],
+            "incompatible-with": [],
+            "rules": []
+        },
+        "is synonymous with": {
+            "inherits": [
+                "is synonymous with"
+            ],
+            "implies": [
+                "means"
+            ],
+            "implies-inverse": [
+                "is synonymous with"
+            ],
+            "incompatible-with": [],
+            "rules": []
+        },
+        "is antonymous with": {
+            "inherits": [
+                "is antonymous with"
+            ],
+            "implies": [
+                "is opposite to"
+            ],
+            "implies-inverse": [
+                "is antonymous with"
+            ],
+            "incompatible-with": [],
+            "rules": []
+        },
+        "is above": {
+            "inherits": [
+                "is above"
+            ],
+            "implies": [],
+            "implies-inverse": [
+                "is below"
+            ],
+            "incompatible-with": [],
+            "rules": []
+        },
+        "is below": {
+            "inherits": [
+                "is below"
+            ],
+            "implies": [],
+            "implies-inverse": [
+                "is above"
+            ],
+            "incompatible-with": [],
+            "rules": []
+        },
+        "is left of": {
+            "inherits": [
+                "is left of"
+            ],
+            "implies": [],
+            "implies-inverse": [
+                "is right of"
+            ],
+            "incompatible-with": [],
+            "rules": []
+        },
+        "is right of": {
+            "inherits": [
+                "is right of"
+            ],
+            "implies": [],
+            "implies-inverse": [
+                "is left of"
+            ],
+            "incompatible-with": [],
+            "rules": []
+        },
+        "is in front of": {
+            "inherits": [
+                "is in front of"
+            ],
+            "implies": [],
+            "implies-inverse": [
+                "is behind"
+            ],
+            "incompatible-with": [],
+            "rules": []
+        },
+        "is behind": {
+            "inherits": [
+                "is behind"
+            ],
+            "implies": [],
+            "implies-inverse": [
+                "is in front of"
+            ],
+            "incompatible-with": [],
+            "rules": []
+        }
+    }
+}
